@@ -9,7 +9,7 @@ Below are the list of modules which I have selected while creating the SpringBoo
     4. JPA
     
 On top of the above modules, I have added the below dependecy to support IBM informix.
-    <dependency>
+                <dependency>
 			<groupId>com.ibm.informix</groupId>
 			<artifactId>jdbc</artifactId>
 			<version>4.10.8.1</version>
