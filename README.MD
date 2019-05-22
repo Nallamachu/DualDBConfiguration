@@ -9,19 +9,20 @@ Below are the list of modules which I have selected while creating the SpringBoo
     4. JPA
     
 On top of the above modules, I have added the below dependecy to support IBM informix.
+```xml
                 <dependency>
 			<groupId>com.ibm.informix</groupId>
 			<artifactId>jdbc</artifactId>
 			<version>4.10.8.1</version>
 		</dependency>
-
+```
 To know how to configure general Embedded H2 Database in Springboot application you can refer this link. https://github.com/Nallamachu/EmbeddedH2Database/tree/master/EmbeddedH2Database
 
 But, there are slightly changes when compare to that application and the new DualDBConfiguration application. But, you can refer the same link to create the table and in H2 database.
 
 Before configuring the IBM Informix database into this application, we need to create a table in Informix Database. You can use the below queries to create the table.
 
-===========================================================================================
+```sql
 DROP TABLE informix.todo_items;
 
 CREATE TABLE informix.todo_items
@@ -43,6 +44,6 @@ ALTER TABLE informix.todo_items
 GRANT SELECT, INDEX, DELETE, UPDATE, INSERT ON informix.todo_items TO public;
 
 COMMIT;
-=========================================================================================
+```
 
 You can check the application.configuration file and Two different config files how I have configured different database configuration and accessing them.
