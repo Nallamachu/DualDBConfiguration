@@ -3,10 +3,12 @@ Here I have used one database is embedded database that has been provided by Spr
 Similary you can configure with any other database with minimal changes on top of this application.
 
 Below are the list of modules which I have selected while creating the SpringBoot application from initializer.
+```
     1. Web
     2. H2
     3. Jersey
     4. JPA
+```
     
 On top of the above modules, I have added the below dependecy to support IBM informix.
 ```xml
